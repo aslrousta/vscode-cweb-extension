@@ -1,0 +1,58 @@
+{
+  "name": "cweb",
+  "displayName": "CWEB",
+  "description": "CWEB Literate Programming",
+  "version": "0.1.0",
+  "license": "SEE LICENCE IN LICENSE",
+  "author": {
+    "name": "Ali AslRousta",
+    "email": "aslrousta@gmail.com",
+    "url": "http://alirus.ir"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "cweb",
+    "literate",
+    "knuth"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:cweb"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "cweb",
+        "extensions": [
+          ".w",
+          ".web",
+          ".ch"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.55.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  }
+}
