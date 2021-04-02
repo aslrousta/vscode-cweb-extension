@@ -1,5 +1,6 @@
 {
   "name": "cweb",
+  "publisher": "alirus",
   "displayName": "CWEB",
   "description": "CWEB Literate Programming",
   "version": "0.1.0",
@@ -8,6 +9,15 @@
     "name": "Ali AslRousta",
     "email": "aslrousta@gmail.com",
     "url": "http://alirus.ir"
+  },
+  "homepage": "https://github.com/aslrousta/vscode-cweb-extension/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aslrousta/vscode-cweb-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/aslrousta/vscode-cweb-extension/issues",
+    "email": "aslrousta@gmail.com"
   },
   "engines": {
     "vscode": "^1.55.0"
